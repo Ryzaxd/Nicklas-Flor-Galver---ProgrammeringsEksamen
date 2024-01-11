@@ -1,0 +1,337 @@
+/* Navbar style til layout */
+
+header {
+  background-color: #eccf0d;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.KBHvaeresteder {
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.1em; 
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #094909; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  transition: all 0.3s ease; 
+}
+
+.KBHvaeresteder:hover {
+  background-color: #3e8e41; 
+  color: #ffffff; 
+}
+
+/* a.button generalt */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #094909;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* body generelt */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* footer i layout.jade */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+/* links til index.jade */
+.centered-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* generelt */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* logo generelt */
+#logo {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: bold;
+  color: #4CAF50;
+  text-shadow: 2px 2px 4px #000000; 
+  font-family: 'Arial', sans-serif; 
+  text-transform: uppercase; 
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* generelt h1 */
+h1 {
+  font-size: 2em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; 
+}
+
+/* generelt h2 */
+h2 {
+  color: #000000;
+  border-bottom: 2px solid #e9eff3;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; 
+  
+}
+
+/* generelt */
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.container h2 {
+  text-align: left; 
+}
+
+.input-group label {
+  text-align: left; 
+}
+
+.input-group input {
+  width: 100%; 
+}
+
+input, textarea, select {
+  width: 50%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* submit button til formular */
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+button.submit-button {
+  display: inline-block;
+  padding: 14px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #094909;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button.submit-button:hover {background-color: #3e8e41}
+
+button.submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* visPakkeID */
+.lead {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.package-id {
+  font-size: 2em;
+  text-align: center;
+  color: #000000;
+}
+
+.container2 {
+  margin-top: auto;
+  width: 50%;
+  margin: auto;
+}
+
+/* generelt */
+.section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* sporbutton til sporpakke */
+button.spor-button {
+  display: inline-block;
+  padding: 14px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #094909;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button.spor-button:hover {background-color: #3e8e41}
+
+button.spor-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* login button */
+
+button.login-button {
+  display: inline-block;
+  padding: 14px 22px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #094909;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button.login-button:hover {background-color: #3e8e41}
+
+button.login-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Pakkeoversigt */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  border-radius: 5px; 
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 0.03em; 
+}
+
+tr:hover { 
+  background-color: #f5f5f5;
+}
+
+/* sporetPakke */
+
+.info-container p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.info-container span {
+  font-weight: bold;
+}
+
+/* toiletter */
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.toilet-card {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.toilet-card p {
+  margin: 0 0 10px;
+}

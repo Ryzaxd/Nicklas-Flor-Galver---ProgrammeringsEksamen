@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 Oplysninger om de forskellige væresteder i kommunen
+    table
+        thead
+            tr
+                th Nummer
+                th Navn
+                th Adresse
+                th Bydel
+
+        tbody
+            each oplysning in oplysninger
+                tr 
+                    td= oplysning.nummer
+                    td= oplysning.navn
+                    td= oplysning.adresse
+                    td= oplysning.bydel
+
+    div.button-group
+        a.button(href="/") Tilbage

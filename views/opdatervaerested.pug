@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  
+  form.updateID-form(action="/opdaterID", method="POST")
+    .section
+      div.container
+        h2 Her kan du indtaste nummeret på et værested og opdatere dens oplysninger i databasen
+
+        div.input-group
+            label(for="id") Indtast nummeret på værestedet du vil opdatere:
+            input#id(type="number", name="id")
+
+            label(for="navn") Indtast nyt navn:
+            input#navn(type="text", name="navn")
+
+            label(for="adresse") Indtast ny adresse:
+            input#adresse(type="text", name="adresse")
+
+            label(for="bydel") Indtast ny bydel:
+            input#bydel(type="text", name="bydel")
+
+        div.button-group
+            button.spor-button(type="submit") opdater 
+
+            a.button(href="/") Tilbage

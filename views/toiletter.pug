@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .container
+    h1.title Offentlige tilgængelige toiletter i Københavns Kommune
+    each toilet in toiletter
+      .toilet-card
+        p.toilet-navn Navn: 
+          span #{toilet.properties.navn}
+        p.toilet-ejer Ejer af toilet: 
+          span #{toilet.properties.ejer}
+        p.toilet-handikapvenlig Handikapvenlig: 
+          span #{toilet.properties.handikapvenlig}
+        p.toilet-aabningstid Åbningstid: 
+          span #{toilet.properties.åbningstid}
+        p.toilet-adresse Adresse: 
+          span #{toilet.properties.adresse}
+        p.toilet-betaling Betaling: 
+          span #{toilet.properties.betaling}
+    
+    div.button-group
+        a.button(href="/") Tilbage

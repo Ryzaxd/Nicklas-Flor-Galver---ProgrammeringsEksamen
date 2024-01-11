@@ -1,0 +1,29 @@
+extends layout
+
+block content
+
+    h1 Her kan du tilføje din egen bog til vores sortiment 
+
+    form.vaerested-form(action="/submit-vaerested-info", method="post")
+    
+        .section
+            div.container
+                h2 Udfyld denne formular for at oprette værestedet
+
+                div.input-group
+                    label(for="navn") Navn: 
+                    input#navn(type="text", name="navn", required)
+
+                div.input-group
+                    label(for="adresse") Adresse: 
+                    input#adresse(type="text", name="adresse", required)
+
+                div.input-group
+                    label(for="bydel") Bydel:
+                    input#bydel(type="text", name="bydel", required)
+
+
+            div.button-group
+                button.submit-button(type="submit") Indsend
+
+                a.button(href="/") Tilbage

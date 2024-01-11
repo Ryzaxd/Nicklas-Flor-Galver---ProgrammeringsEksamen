@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .container
+    h1 Værestedets information
+    div.info-container
+        p Navn: 
+            span #{vaeresteder.navn}
+        p Adresse: 
+            span #{vaeresteder.adresse}
+        p Bydel: 
+            span #{vaeresteder.bydel}
+
+    div.button-group
+      a.button(href="/") Tilbage

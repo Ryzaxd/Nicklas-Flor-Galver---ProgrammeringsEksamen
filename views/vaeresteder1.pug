@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    h1 Oplysninger om de forskellige væresteder i kommunen
+    table
+        thead
+            tr
+                th Nummer
+                th Navn
+                th Adresse
+                th Bydel
+
+        tbody
+            tr
+                td= "1"
+                td= "Aktivitetshuset Sidelinien"
+                td= "Bragesgade 8C"
+                td= "Nørrebro"
+        
+            tr
+                td= "2"
+                td= "Cafe - Den varme stue"
+                td= "Rigensgade 21"
+                td= "Indre By"
+
+            tr
+                td= "3"
+                td= "Cafe Dammen, Bethesda"
+                td= "Rømersgade 17"
+                td= "Indre By"
+
+            tr
+                td= "4"
+                td= "Cafe Klareboderne"
+                td= "Klareboderne 3"
+                td= "Indre By"
+
+            tr
+                td= "5"
+                td= "Cafe Mødestedet"
+                td= "Købmagergade 52"
+                td= "Indre By"
+
+            tr
+                td= "6"
+                td= "Cafe Sankt Lukas"
+                td= "Sankt Lukas Kirke, Christian den 4. gade 1"
+                td= "Indre By"
+
+
+    div.button-group
+        a.button(href="/") Tilbage
